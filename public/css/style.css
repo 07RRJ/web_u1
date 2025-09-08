@@ -1,0 +1,24 @@
+nav{
+    padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.nav_links{
+    padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+html{
+    background-color: rgb(111, 214, 206);
+    /* color: red; */
+}
+
+#link{
+    color: green;
+}
