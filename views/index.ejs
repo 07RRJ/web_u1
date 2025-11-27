@@ -2,55 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
 </head>
 <body>
-    <% if (output !== null) { %>
-        <h2>You wrote: <%= output %></h2>
-    <% } %>
-
     <h2>All Responses:</h2>
     <ul>
         <% responses.forEach(function(response) { %>
             <li><%= response.lista %>, <%= response.lista2 %></li>
         <% }); %>
     </ul>
-
-
-
-    <h1>Admin Dashboard</h1>
-
-    <!-- Find Form -->
-    <form method="POST" action="/find">
-    <input name="lan" placeholder="Länets namn">
-    <button type="submit">Sök</button>
-    </form>
-
-    <!-- Delete Form -->
-    <form method="POST" action="/delete">
-    <input name="lan" placeholder="Län att radera">
-    <button type="submit">Ta bort</button>
-    </form>
-
-    <!-- Update Form -->
-    <form method="POST" action="/update">
-    <input name="lan" placeholder="Nuvarande länets namn">
-    <input name="nyttNamn" placeholder="Nytt namn">
-    <button type="submit">Uppdatera</button>
-    </form>
-
-    <!-- Add New Item Form -->
-    <form method="POST" action="/add">
-    <input name="lista" placeholder="Länets namn" required>
-    <input name="lista2" placeholder="Residensstad" required>
-    <button type="submit">Lägg till</button>
-    </form>
-
-    <div>
-    <%= output %>
-    </div>
-
+    <!-- <p>hej</p> -->
 </body>
 </html>
